@@ -6,8 +6,10 @@ Each concept has:
 - **CCA-F anchor** — the specific exam domain/topic/scenario where the concept appears.
 - **Prerequisite** — what to understand first (— means none; it's an entry point).
 
-Domains: **D1** Agentic Architecture & Orchestration · **D2** Tool Design & MCP Integration · **D3** Claude Code Configuration & Workflows · **D4** Prompt Engineering & Structured Output · **D5** Context Management & Reliability.
-Scenarios: Customer Support Resolution Agent · Code Generation with Claude Code · Multi-Agent Research System · Developer Productivity · Claude Code for CI · Structured Data Extraction.
+Domains (with official exam weights): **D1** Agentic Architecture & Orchestration (27%) · **D2** Tool Design & MCP Integration (18%) · **D3** Claude Code Configuration & Workflows (20%) · **D4** Prompt Engineering & Structured Output (20%) · **D5** Context Management & Reliability (15%).
+Scenarios (exam draws 4 of these 6 at random): Customer Support Resolution Agent · Code Generation with Claude Code · Multi-Agent Research System · Developer Productivity with Claude · Claude Code for Continuous Integration · Structured Data Extraction.
+
+> Domains, weights, and scenario names verified against the **official Anthropic CCA-F Certification Exam Guide** (v0.1) on 2026-07-01 — the authoritative source. Get the current PDF from Anthropic's certification page; direct link at time of writing: https://everpath-course-content.s3-accelerate.amazonaws.com/instructor%2F8lsy243ftffjjy1cx9lm3o2bw%2Fpublic%2F1773274827%2FClaude+Certified+Architect+%E2%80%93+Foundations+Certification+Exam+Guide.pdf . Claude-specific flags/paths cross-checked against docs.claude.com. Re-verify against the latest guide version before relying on any Claude-specific anchor.
 
 ---
 
@@ -54,7 +56,7 @@ Scenarios: Customer Support Resolution Agent · Code Generation with Claude Code
    - Prerequisite: Variable & data types
 
 10. **JSON Schema**
-    - CCA-F anchor: D4 output validation; D3 Claude Code `--json-schema` in CI — enforcing the shape of extracted data.
+    - CCA-F anchor: D4 output validation; D3 Claude Code `--output-format json --json-schema '<schema>'` in CI (the two flags are used together) — enforcing the shape of extracted data.
     - Prerequisite: JSON
 
 11. **Enum**
@@ -81,16 +83,16 @@ Scenarios: Customer Support Resolution Agent · Code Generation with Claude Code
     - CCA-F anchor: D1 — one model turn is a request in, a response out; the unit of an agent step.
     - Prerequisite: REST API
 
-16. **API key / authentication**
-    - CCA-F anchor: D2/D3 — Claude API keys; secrets in CI headless runs.
-    - Prerequisite: REST API
+16. **API key / secrets via environment variables**
+    - CCA-F anchor: D2/D3 — env-var expansion in `.mcp.json` and passing secrets to CI headless runs via env vars rather than hardcoding (Task 2.4 MCP config; Task 3.6 CI). *Note: API authentication/billing itself is out of scope — the in-scope skill is env-var secret handling in config, not auth flows.*
+    - Prerequisite: REST API, Environment variable
 
 17. **Endpoint**
     - CCA-F anchor: D2 — the specific URL an API or MCP server exposes for a capability.
     - Prerequisite: REST API
 
-18. **Rate limiting / timeout**
-    - CCA-F anchor: D5 reliability — handling 429s, backoff, and slow tool calls.
+18. **Error handling / retryable vs non-retryable**
+    - CCA-F anchor: D2/D5 reliability — distinguishing transient (retryable) from validation/business (non-retryable) failures, backoff on retryable errors, and structured error responses (Task 2.2 MCP error responses; Task 5.3 error propagation). *Note: rate-limiting/pricing as a topic is out of scope — the in-scope skill is deciding retry vs fail and returning structured error context.*
     - Prerequisite: HTTP request / response
 
 ---
@@ -102,7 +104,7 @@ Scenarios: Customer Support Resolution Agent · Code Generation with Claude Code
     - Prerequisite: —
 
 20. **CLI flag / argument (e.g. `--flag value`)**
-    - CCA-F anchor: D3 — `-p` for headless mode, `--json-schema` for structured CI output.
+    - CCA-F anchor: D3 — `-p` (or `--print`) for headless mode, `--output-format json` (+ `--json-schema`) for structured CI output.
     - Prerequisite: Terminal / command line
 
 21. **Environment variable**

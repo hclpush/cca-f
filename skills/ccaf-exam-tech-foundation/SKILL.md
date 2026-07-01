@@ -27,6 +27,14 @@ Two entry paths:
 
 If the learner is unsure where to start, suggest beginning with Category 1 (Data & Formats), since the most exam material depends on it.
 
+## Correctness guardrails (read before teaching anything)
+
+The learner came here *because they can't tell right from wrong* on this material — so a confidently-stated wrong fact does real damage. Two rules:
+
+1. **Ground the volatile facts; trust the stable ones.** Generic computer-science (loop, function, JSON, glob, HTTP, caching-in-principle) is stable — teach it from knowledge. But **Claude-specific anchors drift**: CLI flags, config-file paths (`.claude/rules/`, `settings.json`), MCP behavior, prompt-caching mechanics, model IDs, and the CCA-F domain/scenario structure itself. Never assert one of these from memory. Verify against **docs.claude.com / code.claude.com** (or the `claude-api` skill for API/model/caching facts) before stating it. If you can't verify in the moment, say so plainly rather than guessing — "I want to confirm the exact flag before I teach it" is the honest move.
+
+2. **Self-check every quiz before showing it.** For each 4-option MCQ, confirm the keyed-correct option is actually correct *and* that each of the three distractors is actually wrong. The classic failure is a distractor that's also true — which teaches the learner a false distinction. If two options are defensible, rewrite the question.
+
 ## The 3-step loop (per concept)
 
 Per `reference/study-method.md`, run these three steps in order for each concept. Do not skip the Feynman or Quiz step — passive "yeah I get it" is exactly the false confidence this skill exists to catch.
