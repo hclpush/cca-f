@@ -18,6 +18,7 @@ Studying a certification in one tab while coding in another wastes the best stud
 |---|---|---|
 | **ccaf-practice-audit** | Audits your project against the practices the exam tests; every finding explained as study material (task statement, scenario framing, named distractor patterns). Ships an **opt-in** Stop hook that re-audits automatically on significant repo change. | [README](plugins/ccaf-practice-audit/README.md) |
 | **ccaf-exam-tech-foundation** | The prerequisite layer: teaches the ~38 foundational CS concepts (JSON, glob, env vars, caching, MCP…) a non-technical learner needs, each anchored to its exam topic, via a 3-step Explain → Feynman → Quiz loop. | [README](plugins/ccaf-exam-tech-foundation/README.md) |
+| **ccaf-mock-exam-analysis** | The backward loop: turns a completed mock exam into a targeted study plan — per-miss domain + root-cause classification, distractor-pattern tagging, trend comparison across mocks, and a days-until-exam drill plan. | [README](plugins/ccaf-mock-exam-analysis/README.md) |
 
 Install only what you want — plugins are independent.
 
@@ -29,6 +30,7 @@ Install only what you want — plugins are independent.
 /plugin marketplace add hclpush/cca-f
 /plugin install ccaf-practice-audit@cca-f
 /plugin install ccaf-exam-tech-foundation@cca-f
+/plugin install ccaf-mock-exam-analysis@cca-f
 ```
 
 Each plugin's README also documents a manual, no-plugin-system install.
@@ -49,7 +51,8 @@ cca-f/
 ├── .claude-plugin/marketplace.json    # lists every plugin below
 ├── plugins/
 │   ├── ccaf-practice-audit/           # audit skill + Stop hook + change detector
-│   └── ccaf-exam-tech-foundation/     # concept-teaching skill
+│   ├── ccaf-exam-tech-foundation/     # concept-teaching skill
+│   └── ccaf-mock-exam-analysis/       # mock-exam gap analysis + drill planning
 ├── LICENSE
 └── README.md
 ```
@@ -58,7 +61,7 @@ Plugins are self-contained by design (installing one copies only its folder), so
 
 ## Credits
 
-- **Distractor-pattern library** (bundled in ccaf-practice-audit): Abi Odedeyi (CodeFreeIQ), MIT with attribution — see [LICENSE-THIRD-PARTY](plugins/ccaf-practice-audit/LICENSE-THIRD-PARTY). Her full study system (Explain → Feynman → Quiz → Notes with spaced repetition) is the companion to these plugins.
+- **Distractor-pattern library** (bundled in ccaf-practice-audit and ccaf-mock-exam-analysis — plugins are self-contained, so each carries its own copy): Abi Odedeyi (CodeFreeIQ), MIT with attribution — see [LICENSE-THIRD-PARTY](plugins/ccaf-practice-audit/LICENSE-THIRD-PARTY). Her full study system (Explain → Feynman → Quiz → Notes with spaced repetition) is the companion to these plugins.
 - CCA-F task-statement references are paraphrased; always defer to the official exam guide.
 
 ## License

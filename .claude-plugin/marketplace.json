@@ -13,6 +13,11 @@
       "name": "ccaf-exam-tech-foundation",
       "source": "./plugins/ccaf-exam-tech-foundation",
       "description": "The prerequisite layer for CCA-F study — teaches the ~38 foundational CS concepts (JSON, glob, env vars, caching, MCP…) a non-technical learner needs, each anchored to the exam topic where it appears."
+    },
+    {
+      "name": "ccaf-mock-exam-analysis",
+      "source": "./plugins/ccaf-mock-exam-analysis",
+      "description": "The backward loop — turn a completed CCA-F mock exam into a targeted study plan: per-miss domain + root-cause classification, distractor-pattern tagging, trend comparison across mocks, days-until-exam drill plan."
     }
   ]
 }
