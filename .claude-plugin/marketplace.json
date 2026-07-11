@@ -1,0 +1,18 @@
+{
+  "name": "cca-f",
+  "owner": {
+    "name": "hclpush"
+  },
+  "plugins": [
+    {
+      "name": "ccaf-practice-audit",
+      "source": "./plugins/ccaf-practice-audit",
+      "description": "CCA-F best-practice project audits that double as exam prep — explanation-only teaching with task-statement and distractor-pattern mapping, auto-triggered on significant change (opt-in per repo)."
+    },
+    {
+      "name": "ccaf-exam-tech-foundation",
+      "source": "./plugins/ccaf-exam-tech-foundation",
+      "description": "The prerequisite layer for CCA-F study — teaches the ~38 foundational CS concepts (JSON, glob, env vars, caching, MCP…) a non-technical learner needs, each anchored to the exam topic where it appears."
+    }
+  ]
+}
