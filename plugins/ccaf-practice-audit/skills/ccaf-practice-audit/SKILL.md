@@ -94,7 +94,7 @@ Keep it selective: a dozen well-taught findings beat forty shallow ones. Prefer 
 
 ## Exam-lens quality bar
 
-The exam lens is the reason this skill exists — it's what separates this from a generic lint. For each lens, actually reason about how CCA-F would test the concept: scenario-based MCQ, one correct answer, three plausible distractors. The most useful thing you can say is *which wrong answer would tempt someone and why it's wrong* — that's the distractor-pattern muscle the exam rewards. Ground every lens in the official guide's task statement wording, and remember the guide's out-of-scope list (fine-tuning, model training, custom classifiers): any practice recommendation that drifts there is itself the "Fine-tune / train a custom model" distractor.
+The exam lens is the reason this skill exists — it's what separates this from a generic lint. For each lens, actually reason about how CCA-F would test the concept: a scenario-based **multiple-response** question (multiple choice, *select all that apply* — one or more correct options among plausible distractors). The question format is a versioned fact, not a constant — it changed from single-answer before — so if the local exam guide (see Source material) shows a different format, follow the guide over this wording and note the drift. The most useful thing you can say is *which wrong answer would tempt someone and why it's wrong* — that's the distractor-pattern muscle the exam rewards. Ground every lens in the official guide's task statement wording, and remember the guide's out-of-scope list (fine-tuning, model training, custom classifiers): any practice recommendation that drifts there is itself the "Fine-tune / train a custom model" distractor.
 
 ## Auto-trigger context
 

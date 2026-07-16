@@ -16,10 +16,10 @@ Mock-exam result files usually come from third-party prep sites and arbitrary PD
 ## The analysis loop
 
 ### Step 1 — Parse the result file honestly
-Mock exams arrive as messy extractions (PDF → markdown loses highlighting, drops options, garbles answer-key letters). Before analyzing:
-- Count questions, correct, incorrect, unreadable. Report all three — don't silently drop broken questions.
-- **Cross-check every answer-key letter against its explanation text.** Third-party mocks and bad extractions frequently tag the wrong letter while the explanation argues a different option. When they conflict, trust the explanation and flag the file as letter-corrupted so future re-drilling doesn't memorize wrong keys.
-- Ignore the mock's own domain labels. Third-party domain numbering is often wrong; classify each question yourself against the official guide's task statements.
+CCA-F is **multiple-response** (multiple choice, *select all that apply* — a question can have one or more correct options), so a mock question's answer key is a **set of letters**, not a single letter. Mock exams arrive as messy extractions (PDF → markdown loses highlighting, drops options, garbles answer-key letters). Before analyzing:
+- Count questions, correct, incorrect, unreadable. Report all three — don't silently drop broken questions. **A multi-select question counts as correct only if the learner selected every right option and no wrong ones** — partial credit isn't the exam's model, so score it all-or-nothing. Note partially-correct answers separately: they're a distinct and telling failure mode (the learner had the idea but missed one lever, or added a distractor).
+- **Cross-check every answer key against its explanation text**, treating the key as a set. Third-party mocks and bad extractions frequently tag the wrong letters, or list only one correct option when the explanation defends several (a common single-answer→multi-answer conversion bug). When key and explanation conflict, trust the explanation and flag the file as key-corrupted so future re-drilling doesn't memorize wrong or incomplete keys.
+- Ignore the mock's own domain labels. Third-party domain numbering is often wrong; classify each question yourself against the official guide's task statements. Watch for mocks still written in the old single-answer format — flag them, since drilling single-answer habits on a multi-select exam is itself a risk worth naming to the learner.
 
 ### Step 2 — Classify every miss on two axes
 **Axis 1: official domain + task statement** (e.g., "3.6 CI integration"), from the exam guide, never from the mock's labels.
@@ -58,6 +58,7 @@ Write the gap analysis to `<result-basename>-gap-analysis.md` **next to the resu
 Then **propose** — do not silently apply — the follow-on edits: spaced-repetition entries for each in-scope missed concept (in whatever review ledger the learner keeps, if any), and study-plan adjustments. The learner approves; then apply.
 
 ## Principles
+- **The exam format is multiple-response** (multiple choice, *select all that apply*, one or more correct) — but like the weights below, treat this as a versioned fact, not a constant: it changed from single-answer before, so **verify it against the current guide** at the start of an analysis and score to whatever format the guide states. If the guide and this skill disagree, the guide wins — and flag the drift so the wording gets updated.
 - **The pass bar is 720/1000 (~72%), scored by domain weight** (D1 27%, D2 18%, D3 20%, D4 20%, D5 15%) — verify against the current guide, weights can change between versions. Express the gap in *questions*, not percent — "you're 4 questions away" is actionable, "you're 6% away" is a mood. Note it's an approximation: the real exam scales scores by domain weight, so a question in a heavy domain is worth more.
 - **Never fabricate a Claude Code/API fact while correcting one.** If unsure whether the mock's explanation is itself right, check official docs and say what you verified.
 - **Honest, direct tone.** A gap analysis that flatters is worthless.

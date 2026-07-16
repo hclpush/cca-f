@@ -6,7 +6,7 @@
 
 # Distractor Pattern Library (21 named patterns)
 
-The CCA-F exam is scenario MCQs where three of four options are plausible distractors. Each distractor falls into a recognizable pattern. Naming the pattern lets you eliminate distractors faster and more reliably than reasoning each scenario from scratch.
+The CCA-F exam is scenario multiple-response questions (multiple choice, *select all that apply* — one or more options correct). The options that are *not* keyed correct are plausible distractors, and each falls into a recognizable pattern. Naming the pattern lets you eliminate distractors faster and more reliably than reasoning each scenario from scratch — and on a multi-select question you must judge every option independently, since knowing one answer no longer rules the others out.
 
 Use this library as both a **teaching reference** and a **tagging tool** during quizzes. When a new pattern emerges in a scenario that isn't yet named, NAME it (short, evocative phrase), define the mechanism, give 1–2 examples, state the diagnostic "rule," and append it here.
 

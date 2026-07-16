@@ -4,7 +4,7 @@ The **backward loop** of CCA-F study: you take a mock exam, this skill reads the
 
 Point it at any completed CCA-F practice-exam result (PDF-to-markdown extractions welcome — it expects them to be messy) and it will:
 
-1. **Parse honestly** — count readable/unreadable questions, cross-check answer-key letters against explanation text (third-party mocks frequently tag the wrong letter), and ignore the mock's own domain labels in favor of the official guide's task statements.
+1. **Parse honestly** — count readable/unreadable questions, cross-check each answer key against its explanation text (CCA-F is multiple-response, so a key is a *set* of letters; third-party mocks frequently tag the wrong letters or list only one when several are correct, and a multi-select question scores correct only if every right option is picked and no wrong ones), and ignore the mock's own domain labels in favor of the official guide's task statements.
 2. **Classify every miss on two axes** — official domain + task statement, and root cause (mechanics recall / numeric fact / judgment / careless / out-of-scope), because the root cause determines the fix.
 3. **Tag judgment misses with named distractor patterns** from the bundled library — "four misses, two ideas" is the compression that changes a study plan. When you approve a new pattern, the skill copies the library next to your gap analyses and grows that copy, so plugin updates never wipe your additions.
 4. **Compare against previous mocks** to separate persistent structural weaknesses from noise — and name what improved.
