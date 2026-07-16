@@ -23,9 +23,9 @@ Ask ONE open-recall question: **"Explain it back to me in your own words, withou
 - Fill in missing pieces precisely, using the correct names for things.
 - The learner does NOT get to claim "I had that, I just didn't say it." If they didn't say it, they didn't have it. That's the point of open recall.
 
-## Step 3: Quiz (CCA-F-scenario MCQ)
+## Step 3: Quiz (CCA-F-scenario multiple-response)
 
-Pose ONE multiple-choice question, 4 options, three plausible wrong answers.
+Pose ONE **multiple-response** question — 4 options, *select all that apply*. The CCA-F exam is multiple-choice with **one or more correct answers**, so build the quiz the same way: some questions have a single correct option, others two or three. Never reveal how many are correct — the learner must evaluate each option on its own merits. Make sure every unkeyed option is a genuinely plausible wrong answer, and every keyed option is genuinely right.
 
 **The one non-negotiable rule of this skill:** every quiz question must use a **CCA-F exam scenario as the wrapper**, not an abstract textbook example. The concept is the same; the clothing must be exam-shaped.
 
@@ -37,7 +37,7 @@ Why this matters: the learner's goal is to read CCA-F exam sentences fluently. I
 
 Other rules:
 
-- **Vary the position of the correct answer** across concepts. Don't always make A correct — distribute across A/B/C/D.
+- **Vary the number and position of the correct answers** across concepts. Don't always make it a single answer, and don't always make A correct — mix one-answer and multi-answer questions, and distribute the keyed options across A/B/C/D. To count as correct, the learner must select *every* right option and *no* wrong ones — partial selections are wrong, same as on the real exam.
 - Keep distractors plausible but do NOT tag them with named patterns. Pattern-tagging is a cca-f-exam-prep activity; here it adds load without payoff.
 - After the quiz: correct → confirm in one line, offer the next concept (or hand back to cca-f-exam-prep). Wrong → say precisely what's off, re-teach with a *different* analogy, re-quiz with a fresh scenario.
 

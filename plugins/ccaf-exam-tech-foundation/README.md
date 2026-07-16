@@ -6,7 +6,7 @@ It runs a 3-step loop per concept:
 
 1. **Explain** — plain-language definition + real-world analogy + one sentence on why it appears in the CCA-F exam.
 2. **Feynman** — one open-recall question.
-3. **Quiz** — one MCQ wrapped in a CCA-F-style scenario (never an abstract textbook example).
+3. **Quiz** — one multiple-response question (*select all that apply*, one or more correct — matching the real CCA-F format) wrapped in a CCA-F-style scenario (never an abstract textbook example).
 
 This is a **prerequisite layer** beneath the `cca-f-exam-prep` study system — meant to unblock a single concept in the moment, then hand the learner back to exam prep. No spaced-rep logging, no distractor-pattern tagging (those belong to exam prep).
 
